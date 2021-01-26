@@ -1,0 +1,95 @@
+body {
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 18px;
+    src: url(fonts/Gilroy-Medium.ttf);
+    color:#070707;
+}
+
+.container {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.font-family {
+    font-family: Gilroy-Bold, sans-serif;
+    src: url(fonts/Gilroy-Bold.ttf);
+}
+
+.color-grey {
+    color: #828282;
+
+}
+
+header {
+    background-color: #FFFFFF;
+    padding-top: 32px;
+}
+
+.top {
+    padding-bottom: 32px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.border {
+    border-bottom: 1px solid #828282;
+    margin-top: -7px;
+}
+
+.rotate {
+    display: inline-block;
+    position: relative;
+    transform: rotate(-90deg);
+}
+
+.font-size-sm {
+    font-size: 16px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.block {
+    padding-bottom: 50px;
+}
+
+.img-logo {
+    padding-bottom: 104px;
+}
+
+.grey {
+    background: #F6F6F6;
+}
+
+.section-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 120px;
+    padding-bottom: 107px;
+}
+
+.skills {
+    padding-top: 91px;
+    padding-bottom: 110px;
+}
+
+.skills-top {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 84px;
+}
+
+.skills-bottom {
+    display: flex;
+    justify-content: space-around;
+}
