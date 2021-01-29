@@ -1,7 +1,6 @@
 body {
-    font-family: Gilroy-Medium, sans-serif;
+    font-family: 'Gilroy-Medium';
     font-size: 18px;
-    src: url(fonts/Gilroy-Medium.ttf);
     color:#070707;
 }
 
@@ -12,12 +11,7 @@ body {
 
 .bold {
     color:#070707;
-}
-
-.font-family,
-.font-bold {
-    font-family: Gilroy-Bold, sans-serif;
-    src: url(fonts/Gilroy-Bold.ttf);
+    font-family: 'Gilroy-Bold';
 }
 
 .color-grey {
@@ -48,6 +42,7 @@ body {
 
 .author-name {
     line-height: 44px;
+    font-family: 'Gilroy-Bold';
 }
 
 .intro {
@@ -65,6 +60,10 @@ body {
 
 .translations-button {
     font-size: 16px;
+}
+
+.translations-button:not(:first-child) {
+    font-weight:bold;
 }
 
 .translations-buttons {
