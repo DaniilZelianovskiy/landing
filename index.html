@@ -5,39 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My project</title>
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
-        <div class="container top">
+        <div class="container">
             <nav>
-                <ul class="menu">
-                    <li><b class="font-family">Home</b></li>
-                    <li><p class="color-grey font-family">About me</p></li>
-                    <li><p class="color-grey font-family">Skills</p></li>
-                    <li><p class="color-grey font-family">Portfolio</p></li>
-                    <li><p class="color-grey font-family">Contacts</p></li>
+                <ul class="menu font-bold color-grey">
+                    <li><button type="button" class="bold">Home</button></li>
+                    <li><button type="button">About me</button></li>
+                    <li><button type="button">Skills</button></li>
+                    <li><button type="button">Portfolio</button></li>
+                    <li><button type="button">Contacts</button></li>
                 </ul>
             </nav>        
         </div>
-        <div class="border container"></div>
-        <div class="container bottom">
-            <div class="block">
-                <h1 class="font-family">
-                    <p><span>Denis</span></p>
-                    <p><span>Novik</span></p>
-                </h1>
-            </div>
-            <div class="block">
-                <p>UX | UI designer</p>
-                <p>24 years old, Minsk</p>
-            </div>
-            <div class="block">
-                <p class="rotate font-size-sm font-family"><span class="color-grey">RU</span> <b>| ENG</b></p>
-            </div>
-            <div class="img-logo"><img src="./img/BSPP2266.png"></div>
-        </div>
     </header>
     <main>
+        <section class="intro">
+            <div class="container">
+                <div class="intro-top">
+                    <div>
+                        <h1 class="font-family font-size-sm author-name">
+                            <span>Denis</span>
+                            <span>Novik</span>
+                        </h1>
+                    </div>   
+                    <div>
+                        <h3 class="representation">
+                            <span>UX | UI designer</span>
+                            <span>24 years old, Minsk</span>
+                        </h3>
+                    </div>
+                    <div class="translations">
+                        <div class="translations-buttons color-grey"> 
+                            <button type="button" class="translations-button">RU</button>
+                            <button type="button" class="translations-button bold">| ENG</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-bottom">
+                    <div><img src="./img/BSPP2266.png"></div>
+                </div>
+            </div>
+        </section>
         <section class="grey">
             <div class="section-about">
                 <h2>About me</h2>
