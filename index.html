@@ -5,50 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My project</title>
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="fonts/font-Bold.css">
+  <link rel="stylesheet" href="fonts/font-Medium.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
-        <div class="container top">
+        <div class="container">
             <nav>
-                <ul class="menu">
-                    <li><b class="font-family">Home</b></li>
-                    <li><p class="color-grey font-family">About me</p></li>
-                    <li><p class="color-grey font-family">Skills</p></li>
-                    <li><p class="color-grey font-family">Portfolio</p></li>
-                    <li><p class="color-grey font-family">Contacts</p></li>
+                <ul class="menu font-bold color-grey">
+                    <li><button type="button" class="font-bold">Home</button></li>
+                    <li><button type="button">About me</button></li>
+                    <li><button type="button">Skills</button></li>
+                    <li><button type="button">Portfolio</button></li>
+                    <li><button type="button">Contacts</button></li>
                 </ul>
             </nav>        
         </div>
-        <div class="border container"></div>
-        <div class="container bottom">
-            <div class="block">
-                <h1 class="font-family">
-                    <p><span>Denis</span></p>
-                    <p><span>Novik</span></p>
-                </h1>
-            </div>
-            <div class="block">
-                <p>UX | UI designer</p>
-                <p>24 years old, Minsk</p>
-            </div>
-            <div class="block">
-                <p class="rotate font-size-sm font-family"><span class="color-grey">RU</span> <b>| ENG</b></p>
-            </div>
-            <div class="img-logo"><img src="./img/BSPP2266.png"></div>
-        </div>
     </header>
     <main>
+        <section class="intro">
+            <div class="container">
+                <div class="intro-top">
+                    <div>
+                        <h1 class="font-size-sm author-name">
+                            <span>Denis</span>
+                            <span>Novik</span>
+                        </h1>
+                    </div>   
+                    <div>
+                        <h3 class="representation">
+                            <span>UX | UI designer</span>
+                            <span>24 years old, Minsk</span>
+                        </h3>
+                    </div>
+                    <div class="translations">
+                        <div class="translations-buttons color-grey"> 
+                            <button type="button" class="translations-button">RU</button>
+                            <button type="button" class="translations-button font-bold">| ENG</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-bottom">
+                    <div><img src="img/BSPP2266.png"></div>
+                </div>
+            </div>
+        </section>
         <section class="grey">
             <div class="section-about">
                 <h2>About me</h2>
-                <p><span>Hi, I'm Denis – UX/UI designer from Minsk.</span></p>
-                <p><span>I'm interested in design and everything connected with it.</span></p>
+                <p>Hi, I'm Denis – UX/UI designer from Minsk.</p>
+                <p>I'm interested in design and everything connected with it.</p>
                 <br>
-                <p><span>I'm studying at courses "Web and mobile design</span></p>
-                <p><span>interfaces" in IT-Academy.</span></p>
+                <p>I'm studying at courses "Web and mobile design</p>
+                <p>interfaces" in IT-Academy.</p>
                 <br>
-                <p><span>Ready to implement excellent projects</span></p>
-                <p><span>with wonderful people.</span></p>
+                <p>Ready to implement excellent projects</p>
+                <p>with wonderful people.</p>
             </div>
         </section>
         <section class="skills">
@@ -59,10 +72,10 @@
                 <p>I work in such programs as</p>
             </div>
             <div class="skills-bottom">
-                <div><img src="./img/photoshop.png"></div>
-                <div><img src="./img/aftereffects.png"></div>
-                <div><img src="./img/Ilustrator.png"></div>
-                <div><img src="./img/figma.png"></div>
+                <div><img src="img/photoshop.png"></div>
+                <div><img src="img/Ilustrator.png"></div>
+                <div><img src="img/aftereffects.png"></div>
+                <div><img src="img/figma.png"></div>
             </div>
         </section>
     </main>

@@ -1,7 +1,6 @@
 body {
-    font-family: Gilroy-Medium, sans-serif;
+    font-family: 'Gilroy-Medium';
     font-size: 18px;
-    src: url(fonts/Gilroy-Medium.ttf);
     color:#070707;
 }
 
@@ -10,57 +9,66 @@ body {
     margin: 0 auto;
 }
 
-.font-family {
-    font-family: Gilroy-Bold, sans-serif;
-    src: url(fonts/Gilroy-Bold.ttf);
+.font-bold {
+    color:#070707;
+    font-family: 'Gilroy-Bold';
 }
 
 .color-grey {
     color: #828282;
-
-}
-
-header {
-    background-color: #FFFFFF;
-    padding-top: 32px;
-}
-
-.top {
-    padding-bottom: 32px;
 }
 
 .menu {
     display: flex;
     justify-content: space-between;
-}
-
-.border {
     border-bottom: 1px solid #828282;
-    margin-top: -7px;
-}
-
-.rotate {
-    display: inline-block;
-    position: relative;
-    transform: rotate(-90deg);
+    padding: 32px 0;
 }
 
 .font-size-sm {
+    font-size: 34px;
+}
+
+.representation {
+    font-weight: normal;
+    line-height: 22px;
+}
+
+.author-name,
+.representation {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    line-height: 44px;
+    font-family: 'Gilroy-Bold';
+}
+
+.intro {
+    padding-bottom: 104px;
+}
+
+.intro-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+
+.translations-button {
     font-size: 16px;
 }
 
-.bottom {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.translations-button:not(:first-child) {
+    font-weight:bold;
 }
 
-.block {
-    padding-bottom: 50px;
-}
-
-.img-logo {
-    padding-bottom: 104px;
+.translations-buttons {
+    transform: rotate(-90deg) translateX(72px);
+    transform-origin: right bottom;
 }
 
 .grey {
