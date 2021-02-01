@@ -9,7 +9,7 @@ body {
     margin: 0 auto;
 }
 
-.fatty {
+.black-bold {
     color:#070707;
     font-family: 'Gilroy-Bold';
 }
@@ -101,3 +101,4 @@ body {
     display: flex;
     justify-content: space-around;
 }
+
