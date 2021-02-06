@@ -79,7 +79,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
     padding-top: 120px;
     padding-bottom: 107px;
 }
@@ -89,6 +88,12 @@ body {
 }
 
 .text-about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-about-me:not(:last-child) {
     margin-bottom: 25px;
 }
 
