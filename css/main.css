@@ -71,7 +71,7 @@ body {
     transform-origin: right bottom;
 }
 
-.grey {
+.background-gray {
     background: #F6F6F6;
 }
 
@@ -83,7 +83,7 @@ body {
     padding-bottom: 107px;
 }
 
-.section-about h2 {
+.about-title {
     margin-bottom: 18px;
 }
 
