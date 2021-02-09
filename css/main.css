@@ -125,13 +125,13 @@ body {
     margin-bottom: 47px;
 }
 
-.portfolio-text {
+.portfolio-link {
     text-decoration: underline;
     display: block;
     text-align: center;
     margin-top: 45px;
 }
 
-.section-product {
+.portfolio-product {
     margin-bottom: 100px;
 }
