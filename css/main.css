@@ -114,7 +114,7 @@ body {
     margin-bottom: 69px;
 }
 
-.skills-bottom {
+.skills-list {
     display: flex;
     justify-content: space-between;
 }
