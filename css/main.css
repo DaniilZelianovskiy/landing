@@ -137,10 +137,31 @@ body {
 .questions-footer {
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
-.text-footer {
+.footer-text {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 45px;
+    font-size: 14px;
+    color: #828282;
+}
+
+.footer-bottom {
+    margin-top: 85px;
+    width: 350px;
+}
+
+.message {
+    border-radius: 20px;
+    padding: 7.5px 30px;
+    background: #070707;
+    color: #FFFFFF;
+}
+
+footer {
+    padding-bottom: 125px;
+    padding-top: 114px;
 }
