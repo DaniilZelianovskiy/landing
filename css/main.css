@@ -126,3 +126,17 @@ body {
     display: flex;
     justify-content: space-around;
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.footer-top {
+    text-align: center;
+}
+
+.contacts-title {
+    margin-bottom: 20px;
+}
