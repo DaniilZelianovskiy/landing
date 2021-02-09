@@ -110,7 +110,11 @@ body {
     padding-bottom: 84px;
 }
 
+.skills-title {
+    margin-bottom: 69px;
+}
+
 .skills-bottom {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
