@@ -137,3 +137,51 @@ body {
 .portfolio-product {
     margin-bottom: 100px;
 }
+
+.icons-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.footer-top {
+    text-align: center;
+}
+
+.footer-subtitle {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 45px;
+    font-size: 14px;
+    color: #828282;
+}
+
+.footer-bottom {
+    margin-top: 85px;
+    width: 350px;
+}
+
+.button-send {
+    border-radius: 20px;
+    padding: 7.5px 30px;
+    background: #070707;
+    color: #FFFFFF;
+}
+
+footer {
+    padding-bottom: 125px;
+    padding-top: 114px;
+}
