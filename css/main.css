@@ -130,14 +130,11 @@ body {
     text-align: center;
 }
 
-.contacts-title {
-    margin-bottom: 20px;
-}
-
 .questions-footer {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .footer-text {
@@ -154,7 +151,7 @@ body {
     width: 350px;
 }
 
-.message {
+.button-send {
     border-radius: 20px;
     padding: 7.5px 30px;
     background: #070707;
