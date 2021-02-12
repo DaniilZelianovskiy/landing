@@ -1,0 +1,19 @@
+.skills {
+    padding-top: 91px;
+    padding-bottom: 110px;
+}
+
+.skills-text{
+    padding-bottom: 84px;
+    text-align: center;
+}
+
+.skills-title {
+    margin-bottom: 69px;
+    text-align: center;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-between;
+}

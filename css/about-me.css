@@ -1,0 +1,21 @@
+.section-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 107px;
+}
+
+.about-title {
+    margin-bottom: 18px;
+}
+
+.text-about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-about-me:not(:last-child) {
+    margin-bottom: 25px;
+}
