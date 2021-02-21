@@ -5,6 +5,45 @@
     padding: 32px 0;
 }
 
+.hamburger-wrap {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.hamburger {
+    position: relative;
+    display: none;
+    z-index: 1;
+}
+
+.hamburger::after,
+.hamburger::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 4px;
+    background-color: #070707;
+}
+
+.hamburger::after {
+    margin-top: 12px;
+}
+
+.hamburger-inside {
+    margin-top: 6px;
+    width: 25px;
+    height: 4px;
+    background-color: #070707;
+}
+
+.hamburger-inside::after,
+.hamburger-inside::before {
+    content: "";
+    position: absolute;
+    padding: 10px 0;
+}
+
 .representation {
     font-weight: normal;
     line-height: 22px;
@@ -29,20 +68,89 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    flex-wrap: wrap;
     padding-bottom: 50px;
     padding-top: 40px;
-}
-
-.translations-button {
-    font-size: 16px;
-}
-
-.translations-button:not(:first-child) {
-    font-weight:bold;
 }
 
 .translations-buttons {
     transform: rotate(-90deg) translateX(72px);
     transform-origin: right bottom;
+    font-size: 16px;
 }
+
+@media (max-width: 545px) {
+    .hamburger {
+        display: flex;
+        justify-content: flex-end;
+        height: 16px;
+    }
+    
+    .hamburger:active .hamburger::before {
+        transform: rotate(90deg);
+    }
+
+    .hamburger-wrap:active .hamburger-inside{
+        opacity: 0;
+    }
+
+    .header {
+        padding-top: 20px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .intro-top {
+        flex-wrap: wrap;
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+
+    .translations-buttons {
+        transform: rotate(0deg) translateX(0px);
+    }
+    
+    .translations {
+        padding-right: 180px;
+        padding-top: 10px;
+    }
+
+    .hamburger-wrap:active .active {
+        animation-name: active;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes active {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .hamburger-wrap:active .hamburger::after {
+        content: "";
+        transform: rotate(-45deg);
+        bottom: 6px;
+    }
+
+    .hamburger-wrap:active .hamburger::before {
+        content: "";
+        transform: rotate(45deg);
+        top: 6px;
+    }
+}
+
+.active {
+    position: absolute;
+    opacity: 0;
+    background: white;
+    padding-left: 25px;
+    width:180px;
+    height: 200px;
+    margin-top: 5px;
+}
+

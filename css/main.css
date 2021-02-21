@@ -4,11 +4,6 @@ body {
     color:#070707;
 }
 
-.container {
-    width: 950px;
-    margin: 0 auto;
-}
-
 .font-bold {
     color:#070707;
     font-family: 'Gilroy-Bold';
@@ -29,4 +24,23 @@ body {
 .icons-list {
     display: flex;
     justify-content: space-between;
+}
+
+
+.container {
+    width: 950px;
+    margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+    .container {
+        width: 540px;
+    }
+}
+
+@media (max-width: 545px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
 }

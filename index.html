@@ -8,16 +8,16 @@
   <link rel="stylesheet" href="fonts/font-Bold.css">
   <link rel="stylesheet" href="fonts/font-Medium.css">
   <link rel="stylesheet" href="css/main.css">
-  <!-- <link rel="stylesheet" href="css/header.css"> -->
-  <!-- <link rel="stylesheet" href="css/about-me.css"> -->
-  <!-- <link rel="stylesheet" href="css/skills.css"> -->
-  <!-- <link rel="stylesheet" href="css/portfolio.css"> -->
+  <link rel="stylesheet" href="css/header.css">  
+  <link rel="stylesheet" href="css/about-me.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/portfolio.css">
   <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-            <nav>
+            <nav class="navigation">
                 <ul class="menu color-grey">
                     <li><button type="button" class="font-bold">Home</button></li>
                     <li><button type="button">About me</button></li>
@@ -25,7 +25,19 @@
                     <li><button type="button">Portfolio</button></li>
                     <li><button type="button">Contacts</button></li>
                 </ul>
-            </nav>        
+            </nav>
+            <div class="hamburger-wrap">
+                <button class="hamburger"><span class="hamburger-inside"></span></button>
+                <nav class="active">
+                    <ul class="menu-mobile color-grey">
+                        <li><button type="button" class="font-bold">Home</button></li>
+                        <li><button type="button">About me</button></li>
+                        <li><button type="button">Skills</button></li>
+                        <li><button type="button">Portfolio</button></li>
+                        <li><button type="button">Contacts</button></li>
+                    </ul>
+                </nav>
+            </div>       
         </div>
     </header>
     <main>
@@ -46,8 +58,8 @@
                     </div>
                     <div class="translations">
                         <div class="translations-buttons color-grey"> 
-                            <button type="button" class="translations-button">RU</button>
-                            <button type="button" class="translations-button font-bold">| ENG</button>
+                            <button type="button">RU</button>
+                            <button type="button" class="font-bold">| ENG</button>
                         </div>
                     </div>
                 </div>
@@ -80,10 +92,10 @@
                 <h2 class="skills-title font-size-sm font-bold">Skills</h2>
                 <p class="skills-text">I work in such programs as</p>
                 <div class="skills-list">
-                    <div><img src="img/photoshop.png"></div>
-                    <div><img src="img/Ilustrator.png"></div>
-                    <div><img src="img/aftereffects.png"></div>
-                    <div><img src="img/figma.png"></div>
+                    <div class="mobile-skills"><img src="img/photoshop.png" class="mobile-img"></div>
+                    <div class="mobile-skills"><img src="img/Ilustrator.png" class="mobile-img"></div>
+                    <div class="mobile-skills"><img src="img/aftereffects.png" class="mobile-img"></div>
+                    <div class="mobile-skills"><img src="img/figma.png" class="mobile-img"></div>
                 </div>
             </div>
         </section>
@@ -121,10 +133,10 @@
             </div>
             <div class="footer-bottom">
                 <div class="icons-list">
-                    <a href="/"><img src="img/in.svg"></a>
-                    <a href="/"><img src="img/instagram.svg"></a>
-                    <a href="/"><img src="img/Be.svg"></a>
-                    <a href="/"><img src="img/basketball.svg"></a>
+                    <a href="/" class="mobile-footer"><img src="img/in.svg"  class="icons-img"></a>
+                    <a href="/" class="mobile-footer"><img src="img/instagram.svg" class="icons-img"></a>
+                    <a href="/" class="mobile-footer"><img src="img/Be.svg" class="icons-img"></a>
+                    <a href="/" class="mobile-footer"><img src="img/basketball.svg" class="icons-img"></a>
                 </div>
                 <p class="footer-text">
                     <span>Like me on</span>
