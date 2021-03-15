@@ -1,0 +1,26 @@
+@import './variables';
+@import './mixins';
+
+.portfolio {
+  padding-top: 113px;
+  padding-bottom: 100px;
+
+  &__wrapper-title {
+    margin-bottom: 47px;
+
+    text-align: center;
+  }
+
+  &__link {
+    display: block;
+
+    margin-top: 45px;
+
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  &__product:not(:last-child) {
+    margin-bottom: 100px;
+  }
+}

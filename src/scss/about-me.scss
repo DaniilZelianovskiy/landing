@@ -1,0 +1,32 @@
+@import './variables';
+@import './mixins';
+
+.about-me {
+  &__wrapper {
+    @include flex (column, center);
+
+    padding-top: 120px;
+    padding-bottom: 107px;
+  }
+
+  &_title {
+    margin-bottom: 18px;
+
+    text-align: center;
+  }
+
+  &__wrapper-text {
+    @include flex (column, center);
+    flex-wrap: wrap;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__wrapper-text {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+}

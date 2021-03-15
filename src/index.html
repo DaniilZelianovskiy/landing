@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My project</title>
+  <link rel="stylesheet" href="css/reset.min.css">
+  <link rel="stylesheet" href="fonts/font-Bold.css">
+  <link rel="stylesheet" href="fonts/font-Medium.css">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/header.min.css">
+  <link rel="stylesheet" href="css/about-me.min.css">
+  <link rel="stylesheet" href="css/skills.min.css">
+  <link rel="stylesheet" href="css/portfolio.min.css">
+  <link rel="stylesheet" href="css/footer.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__navigation navigation">
+                <ul class="navigation__menu color-grey">
+                    <li class="navigation__item"><button type="button" class="navigation__button font-bold">Home</button></li>
+                    <li class="navigation__item"><button type="button" class="navigation__button">About me</button></li>
+                    <li class="navigation__item"><button type="button" class="navigation__button">Skills</button></li>
+                    <li class="navigation__item"><button type="button" class="navigation__button">Portfolio</button></li>
+                    <li class="navigation__item"><button type="button" class="navigation__button">Contacts</button></li>
+                </ul>
+            </nav>
+            <div class="navigation-mobile navigation-mobile_active">
+                <button class="navigation-mobile__hamburger hamburger">
+                    <span class="hamburger__inside"></span>
+                </button>
+                <nav class="navigation-mobile__menu">
+                    <ul class="navigation-mobile__list color-grey">
+                        <li class="navigation-mobile__item"><button type="button" class="font-bold navigation-mobile__button">Home</button></li>
+                        <li class="navigation-mobile__item"><button type="button" class="navigation-mobile__button">About me</button></li>
+                        <li class="navigation-mobile__item"><button type="button" class="navigation-mobile__button">Skills</button></li>
+                        <li class="navigation-mobile__item"><button type="button" class="navigation-mobile__button">Portfolio</button></li>
+                        <li class="navigation-mobile__item"><button type="button" class="navigation-mobile__button">Contacts</button></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <main>
+        <section class="intro">
+            <div class="container">
+                <div class="intro__top">
+                    <div class="intro__wrapper-name">
+                        <h1 class="font-size-sm intro__name">
+                            <span>Denis</span>
+                            <span>Novik</span>
+                        </h1>
+                    </div>
+                    <div class="intro__wrapper-representation">
+                        <h3 class="intro__representation">
+                            <span>UX | UI designer</span>
+                            <span>24 years old, Minsk</span>
+                        </h3>
+                    </div>
+                    <div class="intro__translations translations">
+                        <div class="translations__wrapper color-grey">
+                            <button type="button" class="translations__button">RU</button>
+                            <button type="button" class="font-bold translations__button">| ENG</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro__bottom">
+                    <div class="intro__avatar"><img src="img/BSPP2266.png" class="intro__image"></div>
+                </div>
+            </div>
+        </section>
+        <section class="about-me background-grey">
+            <div class="container">
+                <div class="about-me__wrapper">
+                    <h2 class="about-me__title font-size-sm font-bold">About me</h2>
+                    <p class="about-me__wrapper-text">
+                        <span class="about-me__text">Hi, I'm Denis – UX/UI designer from Minsk.</span>
+                        <span class="about-me__text">I'm interested in design and everything connected with it.</span>
+                    </p>
+                    <p class="about-me__wrapper-text">
+                        <span class="about-me__text">I'm studying at courses "Web and mobile design</span>
+                        <span class="about-me__text">interfaces" in IT-Academy.</span>
+                    </p>
+                    <p class="about-me__wrapper-text">
+                        <span class="about-me__text">Ready to implement excellent projects</span>
+                        <span class="about-me__text">with wonderful people.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="container">
+                <h2 class="skills__title font-size-sm font-bold">Skills</h2>
+                <p class="skills__description">I work in such programs as</p>
+                <div class="skills__list">
+                    <div class="skills__wrapper-image skills__wrapper-image_mb30"><img src="img/photoshop.png" class="skills__image"></div>
+                    <div class="skills__wrapper-image skills__wrapper-image_mb30"><img src="img/Ilustrator.png" class="skills__image"></div>
+                    <div class="skills__wrapper-image"><img src="img/aftereffects.png" class="skills__image"></div>
+                    <div class="skills__wrapper-image"><img src="img/figma.png" class="skills__image"></div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio background-grey">
+            <div class="container">
+                <div class="portfolio__wrapper-title">
+                    <h2 class="portfolio__title font-size-sm">Portfolio</h2>
+                </div>
+                <div class="portfolio__wrapper-product">
+                    <article class="portfolio__product">
+                        <div><img class="portfolio__image" src="img/Слой 8.png"></div>
+                        <a href="/" class="portfolio__link">Online fashion store - Homepage</a>
+                    </article>
+                    <article class="portfolio__product">
+                        <div><img class="portfolio__image" src="img/reebok_web.png"></div>
+                        <a href="/" class="portfolio__link">Reebok Store - Concept</a>
+                    </article>
+                    <article class="portfolio__product">
+                        <div><img class="portfolio__image" src="img/reebok_web(1).png"></div>
+                        <a href="/" class="portfolio__link">Braun Landing Page - Concept</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__wrapper">
+            <div class="footer__top">
+                <h2 class="footer__title font-size-sm font-bold">Contacts</h2>
+                <p class="footer__subtitle">
+                    <span>Want to know more or just chat?</span>
+                    <span>You are welcome!</span>
+                </p>
+                <button type="button" class="footer__button">Send message</button>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__wrapper-icons">
+                    <ul class="footer__icons-list">
+                        <li class="footer__icon footer__icon_mb10"><a href="/" class="footer__icon-link"><img src="img/in.svg"  class="footer__icon-image"></a></li>
+                        <li class="footer__icon footer__icon_mb10"><a href="/" class="footer__icon-link"><img src="img/instagram.svg" class="footer__icon-image"></a></li>
+                        <li class="footer__icon"><a href="/" class="footer__icon-link"><img src="img/Be.svg" class="footer__icon-image"></a></li>
+                        <li class="footer__icon"><a href="/" class="footer__icon-link"><img src="img/basketball.svg" class="footer__icon-image"></a></li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <h4 class="footer__social-title">Like me on</h4>
+                    <ul class="footer__social-list">
+                       <li><a class="footer__social-link" href="/">LinkedIn,</a></li>
+                       <li><a class="footer__social-link" href="/">Instagram,</a></li> 
+                       <li><a class="footer__social-link" href="/">Behance,</a></li> 
+                       <li><a class="footer__social-link" href="/">Dribble</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

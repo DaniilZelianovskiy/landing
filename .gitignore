@@ -1,0 +1,7 @@
+/node_modules
+/.vscode
+/.idea
+/public
+/npm-debug.log
+/yarn-error.log
+/.env
