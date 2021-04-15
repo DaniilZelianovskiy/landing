@@ -1,0 +1,203 @@
+@import './variables';
+@import './mixins';
+
+.navigation {
+  &__menu {
+    @include flex ($content:space-between);
+
+    padding: 32px 0;
+
+    border-bottom: 1px solid $color-grey;
+  }
+}
+
+.intro {
+  padding-bottom: 104px;
+
+  &__top {
+    @include flex ($items:flex-end, $content:space-between);
+
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  &__name {
+    font-family: 'Gilroy-Bold';
+    line-height: 44px;
+  }
+
+  &__representation {
+    font-weight: normal;
+    line-height: 22px;
+  }
+
+  &__name,
+  &__representation {
+    @include flex (column);
+  }
+}
+
+.translations {
+  &__wrapper {
+    font-size: 16px;
+
+    transform: rotate(-90deg) translateX(72px);
+    transform-origin: right bottom;
+  }
+}
+
+.navigation-mobile {
+  &__menu {
+    display: none;
+  }
+}
+
+@media (max-width: 545px) {
+  .navigation-mobile {
+    position: relative;
+
+    @include flex ($content:flex-end);
+
+    &_active {
+      & .hamburger__inside {
+        display: none;
+      }
+
+      & .navigation-mobile__hamburger::after {
+        bottom: 6px;
+
+        transform: rotate(-45deg);
+      }
+
+      & .navigation-mobile__hamburger::before {
+        top: 6px;
+
+        transform: rotate(45deg);
+      }
+
+      & .navigation-mobile__menu {
+        visibility: visible;
+
+        height: 200px;
+      }
+
+      & .navigation-mobile__list {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+    }
+
+    &__hamburger {
+      @include flex ($content:flex-end);
+
+      width: 25px;
+      height: 16px;
+
+      &::after {
+        margin-top: 12px;
+      }
+
+      &::after,
+      &::before {
+        position: absolute;
+
+        width: 25px;
+        height: 4px;
+
+        content: '';
+        transition: 500ms;
+
+        background-color: $black;
+      }
+    }
+
+    &__menu {
+      position: absolute;
+      top: 26px;
+
+      display: block;
+      visibility: hidden;
+
+      width: 180px;
+      height: 0;
+
+      transition: 500ms;
+
+      background: $white;
+      box-shadow: -3px 5px 8px 0 $color-grey;
+    }
+
+    &__list {
+      @include flex (column, $content:space-around);
+      overflow: hidden;
+
+      width: 100%;
+      height: 100%;
+      padding: 0 30px;
+
+      transition: 500ms;
+    }
+
+    &__item {
+      flex-shrink: 0;
+
+      height: 34px;
+    }
+  }
+
+  .hamburger {
+    &__inside {
+      width: 25px;
+      height: 4px;
+      margin-top: 6px;
+
+      animation-name: hamburger-to-closed;
+      animation-duration: 500ms;
+
+      background-color: $black;
+
+      animation-fill-mode: forwards;
+    }
+  }
+
+  .header {
+    padding-top: 20px;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .intro {
+    &__top {
+      flex-wrap: wrap;
+
+      padding-top: 0;
+      padding-bottom: 30px;
+    }
+
+    &__translations {
+      padding-top: 10px;
+      padding-right: 180px;
+    }
+  }
+
+  .translations {
+    &__wrapper {
+      transform: rotate(0deg) translateX(0px);
+    }
+  }
+}
+
+@keyframes hamburger-to-closed {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

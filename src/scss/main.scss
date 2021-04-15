@@ -1,0 +1,45 @@
+@import './variables';
+@import './mixins';
+
+body {
+  font-family: 'Gilroy-Medium';
+  font-size: 18px;
+
+  color: $black;
+}
+
+.font-bold {
+  font-family: 'Gilroy-Bold';
+
+  color: $black;
+}
+
+.color-grey {
+  color: $color-grey;
+}
+
+.font-size-sm {
+  font-size: 34px;
+}
+
+.background-grey {
+  background: $background-grey;
+}
+
+.container {
+  width: 950px;
+  margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 540px;
+  }
+}
+
+@media (max-width: 545px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
